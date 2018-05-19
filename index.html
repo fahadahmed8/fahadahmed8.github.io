@@ -2,8 +2,8 @@
 <head>
     <title>Fahad Ahmed - Developer and Sportsman</title>
     <link rel="shortcut icon" type="image/png" href="logo.png" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
@@ -44,28 +44,43 @@
         class Name extends React.Component {
             render() {
                 return(
-                    <h1>{this.props.name}</h1>
+                    <img src="Name.png" />
                 );
             }
         }
 
-       // ReactDOM.render(<Name name="Fahad Ahmed" />, document.getElementById('name'));
+       ReactDOM.render(<Name name="Fahad Ahmed" />, document.getElementById('name'));
 
 
     </script>
               
     <div id="main">
-        <span id="burger" onclick="openNav()">&#9776;</span>
+      
+        <div id="burger"></div>
         <div id="name" align="center"></div>
     </div>
 
+    <script type="text/babel">
+        class Burger extends React.Component{
+            render(){
+                return(
+                    <span onClick={this.openNav}>&#9776;</span>
+                );
+            }
 
-    <script type="text/javascript">
-        function openNav() {
+            openNav = () => {
                 document.getElementById("mySidenav").style.width = "300px";
                 document.getElementById("main").style.marginLeft = "300px";
-                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
             }
+        }
+
+        ReactDOM.render(<Burger />, document.getElementById('burger'));
+    </script>
+
+
+    <script type="text/javascript">
+        
     </script>
     
 </body>
