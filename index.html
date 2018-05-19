@@ -1,11 +1,29 @@
 <html>
 <head>
-    <title>Fahad Ahmed - Developer</title>
+    <title>Fahad Ahmed - Developer and Sportsman</title>
     <link rel="shortcut icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Fahad Ahmed</h1>
-    <h2>Coming Soon!</h2>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        class Name extends React.Component {
+            render() {
+                return(
+                    <h1>{this.props.name}</h1>
+                );
+            }
+        }
+
+        ReactDOM.render(<Name name="Fahad Ahmed" />, document.getElementById('root'));
+
+    </script>
     
 </body>
 </html>
