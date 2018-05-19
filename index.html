@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Fahad Ahmed - Developer and Sportsman</title>
-    <link rel="shortcut icon" type="image/png" href="logo.png" />
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -33,6 +33,7 @@
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("main").style.marginLeft = "0";
                 document.body.style.backgroundColor = "white";
+                document.getElementById("main").style.opacity = "1.0";                                          
             }
 
            
@@ -44,7 +45,7 @@
         class Name extends React.Component {
             render() {
                 return(
-                    <img src="Name.png" />
+                    <img src="images/Name.png" />
                 );
             }
         }
@@ -55,7 +56,6 @@
     </script>
               
     <div id="main">
-      
         <div id="burger"></div>
         <div id="name" align="center"></div>
     </div>
@@ -71,7 +71,8 @@
             openNav = () => {
                 document.getElementById("mySidenav").style.width = "300px";
                 document.getElementById("main").style.marginLeft = "300px";
-                document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+                document.getElementById("main").style.opacity = "0.5";                          
             }
         }
 
