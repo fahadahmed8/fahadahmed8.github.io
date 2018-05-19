@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <div id="root"></div>
+    <div id="navbar"></div>
 
     <script type="text/babel">
         class Navbar extends React.Component {
@@ -38,11 +38,12 @@
            
         }
 
-        ReactDOM.render(<Navbar />, document.getElementById('root'));
+        ReactDOM.render(<Navbar />, document.getElementById('navbar'));
 
     </script>
               
     <div id="main">
+        <div id="name"></div>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
 
@@ -57,14 +58,14 @@
             }
         }
 
-        //ReactDOM.render(<Name name="Fahad Ahmed" />, document.getElementById('root'));
+        ReactDOM.render(<Name name="Fahad Ahmed" />, document.getElementById('name'));
 
     </script>
 
     <script type="text/javascript">
         function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
+                document.getElementById("mySidenav").style.width = "300px";
+                document.getElementById("main").style.marginLeft = "300px";
                 document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
             }
     </script>
