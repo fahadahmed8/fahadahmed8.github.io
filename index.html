@@ -4,6 +4,7 @@
     <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
@@ -15,6 +16,7 @@
 
     <div id="navbar"></div>
 
+    <!--Navbar and Image Compenent-->    
     <script type="text/babel">
         class Navbar extends React.Component {
             render() {
@@ -41,16 +43,16 @@
 
         ReactDOM.render(<Navbar />, document.getElementById('navbar'));
         
-        //NAME Component
-        class Name extends React.Component {
+        //NAME-LOGO Component
+        class Image extends React.Component {
             render() {
                 return(
-                    <img src="images/Name.png" />
+                    <a href="#"><img src="images/Name.png" /></a>
                 );
             }
         }
 
-       ReactDOM.render(<Name name="Fahad Ahmed" />, document.getElementById('name'));
+       ReactDOM.render(<Image name="Fahad Ahmed" />, document.getElementById('name'));
 
 
     </script>
@@ -58,8 +60,16 @@
     <div id="main">
         <div id="burger"></div>
         <div id="name" align="center"></div>
+        <div id="social">
+            <span id="social_text">F O L L O W :</span>
+            <a><i class="fa fa-facebook-official"></i></a>
+            <a><i class="fa fa-github"></i></a>
+            <a><i class="fa fa-instagram"></i></a>
+            <a><i class="fa fa-youtube-play"></i></a>            
+        </div>
     </div>
 
+    <!--Burger Component-->    
     <script type="text/babel">
         class Burger extends React.Component{
             render(){
@@ -77,12 +87,9 @@
         }
 
         ReactDOM.render(<Burger />, document.getElementById('burger'));
+
     </script>
 
 
-    <script type="text/javascript">
-        
-    </script>
-    
 </body>
 </html>
