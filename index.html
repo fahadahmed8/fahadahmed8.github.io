@@ -39,17 +39,8 @@
         }
 
         ReactDOM.render(<Navbar />, document.getElementById('navbar'));
-
-    </script>
-              
-    <div id="main">
-        <div id="name"></div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    </div>
-
-    
-
-    <script type="text/babel">
+        
+        //NAME Component
         class Name extends React.Component {
             render() {
                 return(
@@ -58,9 +49,16 @@
             }
         }
 
-        ReactDOM.render(<Name name="Fahad Ahmed" />, document.getElementById('name'));
+       // ReactDOM.render(<Name name="Fahad Ahmed" />, document.getElementById('name'));
+
 
     </script>
+              
+    <div id="main">
+        <span id="burger" onclick="openNav()">&#9776;</span>
+        <div id="name" align="center"></div>
+    </div>
+
 
     <script type="text/javascript">
         function openNav() {

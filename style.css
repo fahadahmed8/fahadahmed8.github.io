@@ -57,8 +57,17 @@ body {
 
 #main {
     transition: margin-left 0.8s;
-    padding: 16px;
 }
+
+#burger{
+    position: absolute;
+    font-size:36px;
+    cursor:pointer;
+    margin-top :60px;
+    margin-left: 60px;
+}
+
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
