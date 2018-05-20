@@ -22,23 +22,37 @@
              
     <!--MAIN-->
     <div id="main">
-        <div id="burger">
-            <span onclick="openNav()">&#9776;</span>
-        </div>
-        <div id="name" align="center">
-            <a href="#"><img id="logo" src="images/Name.png" /></a>
-        </div>
-        <div id="social">
-            <span id="social_text">F O L L O W :</span>
-            <a><i class="fa fa-facebook-official"></i></a>
-            <a><i class="fa fa-github"></i></a>
-            <a><i class="fa fa-instagram"></i></a>
-            <a><i class="fa fa-youtube-play"></i></a>            
+        <div class="nav navbar">
+            <div id="burger">
+                <span onclick="openNav()">&#9776;</span><br>
+                <span onclick="openNav()" style="font-size:11px;margin-left:-3px;color:gray;"><b>M E N U</b></span>
+            </div>
+            <div id="name" align="center">
+                <!--<a href="#"><img id="logo" src="images/Name.png" /></a>-->
+            </div>
+            <div id="social">
+                <span id="social_text"><b>F O L L O W :</b></span>
+                <a><i class="fa fa-facebook-official"></i></a>
+                <a><i class="fa fa-github"></i></a>
+                <a><i class="fa fa-youtube-play"></i></a>            
+            </div>
+
         </div>
 
+        <div class="about">
+            <p id="ab_text"><span id="greet">Hello,</span><span id="greet2">World!</span>
+                 I am <img src="images/me.png">,<br><b>Designoveloper</b> and a <em>Sportsman</em></p>
+        </div>
+        
         <div align="center">
             <img id="avatar" src="images/avatar.jpg">
         </div>
+
+        <div align="center" style="margin-top:50px;">
+            <button class="btn btn-danger btn-lg">See my Portfolio</button>
+        </div>
+        
+        <div class="test">test</div>
     </div>
   
     <script type="text/javascript">
