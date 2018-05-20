@@ -12,9 +12,8 @@
     <div id="navbar">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skill Set</a>
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
         </div>
@@ -40,18 +39,27 @@
 
         </div>
 
-        <div class="about">
-            <p id="ab_text"><span id="greet">Hello,</span><span id="greet2">World!</span>
-                 I am <img src="images/me.png">,<br><b>Designoveloper</b>, Scientist, <em>Hackrr</em> and a <b>Sportsman</b></p>
-        </div>
-        
-        <div align="center">
-            <img id="avatar" src="images/avatar.jpg">
+        <div id="home">
+            <div class="home">
+                <p id="ab_text"><span id="greet">Hello,</span><span id="greet2">World!</span>
+                    I am <img src="images/me.png">,<br><b>Designoveloper</b>, Scientist, <em>Hackrr</em> and a <b>Sportsman</b></p>
+            </div>
+            
+            <div align="center">
+                <img id="avatar" src="images/avatar.jpg">
+            </div>
+
+            <div align="center" style="margin-top:50px;">
+                <button class="btn btn-danger btn-lg">See my Portfolio</button>
+            </div>
         </div>
 
-        <div align="center" style="margin-top:50px;">
-            <button class="btn btn-danger btn-lg">See my Portfolio</button>
+        <div id="about">
+            <div style="margin-top: 200px;">
+                <h2>About</h2>
+            </div>
         </div>
+
         
         <div class="test">test</div>
     </div>
@@ -65,10 +73,10 @@
         }
 
         function openNav() {
-                document.getElementById("mySidenav").style.width = "300px";
-                document.getElementById("main").style.marginLeft = "300px";
-                document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
-                document.getElementById("main").style.opacity = "0.5";                          
+            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "300px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+            document.getElementById("main").style.opacity = "0.5";                          
         }
 
     </script>
