@@ -61,11 +61,11 @@ body {
 }
 
 #main {
-    transition: margin-left 0.8s;
+    transition: 0.8s;
 }
 
 #burger{
-    position: fixed;
+    position: absolute;
     font-size:36px;
     cursor:pointer;
     margin-top : 50px;
