@@ -122,23 +122,23 @@ body {
 
 #avatar{
     margin-top: 20px;
-    width: 220px;
+    width: 200px;
     height: 250px;
     border-radius: 50%; 
+    transition: 0.8s;
+}
+
+#avatar:hover{
+    width: 220px;
+    height: 270px;
+    transition: 0.8s;
 }
 
 .test{
     margin-top: 600px;
 }
 
-#greet{
-    font-family: monospace;
-    font-size: 34px;
-    color: darkmagenta;
-    font-weight: bold;
-}
-
-#greet2{
+#greet, #greet2{
     font-family: monospace;
     font-size: 34px;
     color: darkmagenta;
