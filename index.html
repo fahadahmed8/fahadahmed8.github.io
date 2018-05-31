@@ -10,7 +10,7 @@
 </head>
 <body>
     <!--Navbar-->
-    <div id="navbar">
+    <!--<div id="navbar">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#main">Home</a>
@@ -18,7 +18,7 @@
             <a href="#">Projects</a>
             <a href="#">Contact</a>
         </div>
-    </div>
+    </div>-->
    
              
     <!--MAIN-->
@@ -27,7 +27,7 @@
             <div id="burger">
                 <!--<span onclick="openNav()">&#9776;</span><br>-->
                 <!--<span onclick="openNav()" style="font-size:11px;margin-left:-3px;color:gray;"><b>M E N U</b></span>-->
-                <img onclick="openNav()" id="logo" src="images/logo.png">
+                <img id="logo" src="images/logo.png">
             </div>
             <hr>
             <div id="name" align="center">
@@ -50,11 +50,12 @@
             
             <div align="center">
                 <img onmouseover="introAboutMe(this)" id="avatar" src="images/avatar.jpg">
+               
             </div>
 
         </div>
         <div id="about">
-            
+                <h3 id="wow">Lorem Ipsum is simply dummy text of the printing </h3>
         </div>
 
         <div class="test">test</div>
@@ -83,8 +84,7 @@
             x.style.transition = "0.8s";    
             var a = document.getElementById("about");        
             //a.style.opacity = "0.7";
-            a.style.transition = "1s";
-        
+            a.style.transition = "1s";        
         }
 
         function restate(x){
