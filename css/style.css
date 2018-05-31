@@ -83,13 +83,25 @@ body {
 #greet, #greet2{
     font-family: monospace;
     font-size: 34px;
-    color: darkmagenta;
+    color:rgb(26, 22, 22);
     font-weight: bold;
+}
+
+#name{
+    font-family: sans-serif;
+    font-weight: bold;
+    color:darkmagenta;
+    font-size: 38px;
+}
+
+#name:hover{
+    color:rgb(59, 18, 18);
+    transition: 0.6s;
 }
 
 .home{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .home p{
@@ -130,8 +142,43 @@ body {
 
  #about-content{
     color: whitesmoke;
-    margin-top: 100px;
+    margin-top: 45px;
     z-index: 1;
  }
 
+ #about-content p{
+     font-size: 20px;
+ }
+
+ #about-content a{
+    color:orange;
+    text-decoration: none !important;
+ }
+
+ #about-content .btn{
+     width: 170px;
+     border: solid 2px white;
+     background-color: #3F51B5;
+     border-top-left-radius: 30px;
+     border-bottom-left-radius: 30px;
+     border-top-right-radius: 30px;
+     border-bottom-right-radius: 30px;
+     color: white;
+     font-weight: bold;
+     transition: 0.3s;
+ }
+
+ #about-content .btn:hover{
+    border: solid 2px white;
+    background-color: white;
+    color: #3F51B5;
+    transition: 0.5s;
+    font-weight: bold;
+ }
+
+ #subscript{
+     font-family: monospace;
+     font-weight: bold;
+     color:maroon;
+ }
 
