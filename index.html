@@ -35,9 +35,9 @@
             </div>
             <div id="social">
                 <span id="social_text"><b>F O L L O W :</b></span>
-                <a><i class="fa fa-facebook-official"></i></a>
-                <a><i class="fa fa-github"></i></a>
-                <a><i class="fa fa-youtube-play"></i></a>            
+                <a href="https://www.facebook.com/fahad.mughal.9237244?ref=bookmarks"><i class="fa fa-facebook-official"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-youtube-play"></i></a>            
             </div>
 
         </div>
@@ -49,17 +49,26 @@
             </div>
             
             <div align="center">
-                <img onmouseover="introAboutMe(this)" id="avatar" src="images/avatar.jpg">
+                <img onmouseover="restate(this)" onmouseout="introAboutMe()"  id="avatar" src="images/avatar.jpg">
                
             </div>
 
         </div>
         <div id="about">
-                <h3 id="wow">Lorem Ipsum is simply dummy text of the printing </h3>
+                <!--<div id="pacman"></div>-->
+        </div>
+        <div id="about-content"  align="center" >
+                <h2>LOREM IPSUM</h2>            
+                <h3>Lorem Ipsum is simply dummy text of the printing </h3>
+                <h5>Lorem Ipsum is simply dummy text of the printing </h5>
+                <h5>Lorem Ipsum is simply dummy text of the printing </h5>
+                <button style="margin-top:80px;" class="btn btn-success btn-lg">See my Porfolio!</button>
+                                
         </div>
 
         <div class="test">test</div>
     </div>
+    
   
     <script type="text/javascript">
         function closeNav() {
@@ -78,21 +87,22 @@
             document.getElementById("main").style.opacity = "0.5";                          
         }
 
-        function introAboutMe(x){
+        function introAboutMe(){
+            var x = document.getElementById("avatar");
             x.style.width = "90px";
             x.style.height = "110px";
-            x.style.transition = "0.8s";    
+            x.style.transition = "4s";    
             var a = document.getElementById("about");        
             //a.style.opacity = "0.7";
-            a.style.transition = "1s";        
+            a.style.transition = "1s";      
         }
 
         function restate(x){
             x.style.marginTop = "20px";
             x.style.width = "200px";
             x.style.height = "250px";
-            x.style.borderRadius = "50%"; 
-            x.style.transition= "3s";
+            x.style.borderRadius = "45%"; 
+            x.style.transition= "2s";
         }
 
     </script>
