@@ -1,0 +1,29 @@
+#navbar {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgb(250,250,250,0.9);
+    overflow-x: hidden; 
+    top: -60px;
+    display:block;
+    transition: top 0.5s;
+    height: 60px;
+}
+
+#navbar a {
+    padding: 16px 18px;
+    text-decoration: none !important;
+    font-size: 17px;
+    color: #4f73d7;
+    float: right;
+    font-family: helvetica;
+    font-weight: bold;
+    
+}
+
+#navbar a:hover {
+    color: orange;
+    font-size: 17px;    
+    transition: 0.5s;
+}
+

@@ -3,31 +3,31 @@
     <title>Fahad Ahmed | Designoveloper, Hackrr and Sportsman</title>
     <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />    
     <link rel="stylesheet" type="text/css" href="css/scrollbar.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
-<body>
-    <!--Navbar-->
-    <!--<div id="navbar">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#main">Home</a>
-            <a href="#about">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>-->
-   
-             
+<body>       
     <!--MAIN-->
     <div id="main">
-        <div class="nav navbar" id="navigation">
+        <!--Navbar-->
+        <div id="navbar" class="nav navbar navbar-fixed-top">
+            <div class="container">
+            <img id="logo" src="images/logo.png">
+            <a href="">Contact</a>
+            <a href="">Projects</a>
+            <a href="#home">About</a>
+            <a href="#main">Home</a>
+            </div>
+        </div>
+
+        <div id="navigation">
             <div id="burger">
                 <!--<span onclick="openNav()">&#9776;</span><br>-->
                 <!--<span onclick="openNav()" style="font-size:11px;margin-left:-3px;color:gray;"><b>M E N U</b></span>-->
-                <img id="logo" src="images/logo.png">
+                <img id="logo" src="images/logo2.png">
             </div>
             <hr>
             <div id="name" align="center">
@@ -58,9 +58,9 @@
         <div id="about">
                 <!--<div id="pacman"></div>-->
         </div>
-        <div class="container" id="about-content"  align="center" >
+        <div id="about-content"  align="center" >
                 <h2><b>Nice to meet you</b></h2>            
-                <p>I'm a Web engineer, full-stack developer, Hackrr and a Sportsman. Creating applications 
+                <p>I'm a Web engineer, full-stack developer, Hackrr and a Sportsman. I love to Create applications 
                 by applying functional and object oriented programming and providing software solutions to create digital products
                 for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops.</p>
                 <h4><a href="#">Lets create something special</a></h4>
@@ -73,7 +73,7 @@
     
   
     <script type="text/javascript">
-        function closeNav() {
+       /* function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
             document.body.style.backgroundColor = "white";
@@ -87,13 +87,13 @@
             document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
             document.getElementById('mySidenav').style.boxShadow = "5px 5px 10px";
             document.getElementById("main").style.opacity = "0.5";                          
-        }
+        }*/
 
         function introAboutMe(){
             var x = document.getElementById("avatar");
             x.style.width = "90px";
             x.style.height = "110px";
-            x.style.transition = "3s";    
+            x.style.transition = "2s";    
             var a = document.getElementById("about");        
             //a.style.opacity = "0.7";
             a.style.transition = "1s";      
@@ -105,6 +105,16 @@
             x.style.height = "250px";
             x.style.borderRadius = "45%"; 
             x.style.transition= "2s";
+        }
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-60px";
+            }
         }
 
     </script>
