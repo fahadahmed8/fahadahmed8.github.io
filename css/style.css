@@ -172,12 +172,17 @@ body {
  #about-content p{
      font-size: 20px;
      margin: 0px 270px; 
+     font-family: 'Roboto', sans-serif;
  }
 
  #about-content a{
     color:orange;
     text-decoration: none !important;
     font-size: 18px;    
+ }
+
+ #about-content h2{
+     font-family: 'Prompt', sans-serif;
  }
 
  #about-content .btn{
@@ -204,4 +209,37 @@ body {
      font-weight: bold;
      color:maroon;
  }
+
+ #projects h2{
+     font-family: 'Prompt', sans-serif;
+     margin-top: 270px;
+     font-weight: 500;
+ }
+
+ #projects h4{
+     font-family: 'Prompt', sans-serif;
+ }
+
+ #projects a{
+     font-family: 'Indie Flower', sans-serif;
+     font-size: 22px;
+     text-decoration: none !important;
+     color:darkorange;
+ }
+
+#row1{
+     margin-top: 60px;
+ }
+
+#row2{
+    margin-top: 30px;
+}
+
+ #projects img{
+     width: 100%;
+    border-radius: 12px;
+ }
+
+
+
 
