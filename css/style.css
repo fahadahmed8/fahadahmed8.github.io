@@ -51,6 +51,11 @@ body {
     transition: 0.5s;
 }
 
+.pr:hover{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
 .social a{
     margin-right: 5px;
 }
@@ -231,15 +236,30 @@ body {
      margin-top: 60px;
  }
 
-#row2{
+#row2a{
     margin-top: 30px;
 }
 
+#row2b, #row2c{
+    margin-top: 60px;
+}
+
  #projects img{
-     width: 100%;
+    width: 100%;
     border-radius: 12px;
  }
 
+ #technologies{
+     margin-top: 250px;
+ }
 
+ #technologies img{
+     width: 80%;
+ }
+
+ #technologies img:hover{
+    opacity: 0.8;
+ }
+ 
 
 
